@@ -6,7 +6,6 @@ Get a macOS desktop (with Xcode) over VNC, for free, in several clicks
 > 基於原作者的說明，增加中文說明與圖解<br>
 
 
-
 <img width="1159" height="852" alt="image" src="https://github.com/user-attachments/assets/2bec4e93-6a8e-421b-8419-e4a5c92b655c" />
 
 <br>
@@ -68,7 +67,6 @@ Get Tailscale Key<br>
 對於Mac使用者，使用「螢幕共享」(內建的)連線<br>
 For macOS user, use Screen Sharing to connect<br>
 
-
 對於Windows使用者，使用VNC Viewer連線<br>
 For Windows user, use VNC Viewer to connect<br>
 
@@ -76,11 +74,13 @@ For Windows user, use VNC Viewer to connect<br>
 不建議使用檔案保險庫，這可能會拖累效能<br>
 Enabling FileVault is not recommended<br>
 
-
 <img width="1098" height="806" alt="image" src="https://github.com/user-attachments/assets/228f1dbd-ef35-4598-ac90-b2b10a085634" />
 
-
 <img width="955" height="667" alt="image" src="https://github.com/user-attachments/assets/88d16ea5-7c8a-4680-90b7-16bf11b46979" />
+
+如果有架設服務，Funnel也開好80 Port了，可以直接用
+Funnel on 80 port is also enabled
+<img width="453" height="107" alt="image" src="https://github.com/user-attachments/assets/57bb830a-3e2e-477c-8299-69ce43e0bcc7" />
 
   
 <hr />
