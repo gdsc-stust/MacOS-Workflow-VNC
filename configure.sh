@@ -26,7 +26,6 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate
 
 brew install tailscale
-sudo tailscaled install-system-extension
 sudo tailscale up --authkey $3
 tailscale status
 sudo tailscale funnel 80
