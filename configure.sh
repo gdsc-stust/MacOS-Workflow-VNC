@@ -33,7 +33,7 @@ sudo brew services start tailscale
 # 5. 讓子彈飛一會兒 (等待 Daemon 建立 Socket)echo "⏳ 等待 Tailscale 服務啟動中..."
 sleep 10
 # 6. 登入並配置# --ssh: 順便開啟 Tailscale SSH 功能，以後 SSH 更方便# --accept-routes: 如你有設 Subnet Router 這很有用
-sudo tailscale up --authkey $3 --ssh --accept-routes
+sudo tailscale up --authkey "$3" --ssh --accept-routes
 # 7. 開啟 Funnel (確保本地 80 port 真的有東西在跑喔)
 sudo tailscale funnel 80# 8. 收工檢查
 echo "✅ 完成！目前狀態："
