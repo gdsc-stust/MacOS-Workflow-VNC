@@ -1,4 +1,4 @@
-#configure.sh VNC_USER_PASSWORD VNC_PASSWORD NGROK_AUTH_TOKEN
+#configure.sh VNC_USER_PASSWORD VNC_PASSWORD TS_KEY
 
 #disable spotlight indexing
 sudo mdutil -i off -a
@@ -6,7 +6,7 @@ sudo mdutil -i off -a
 #Create new account
 sudo dscl . -create /Users/vncuser
 sudo dscl . -create /Users/vncuser UserShell /bin/bash
-sudo dscl . -create /Users/vncuser RealName "VNC User"
+sudo dscl . -create /Users/vncuser RealName "User"
 sudo dscl . -create /Users/vncuser UniqueID 1001
 sudo dscl . -create /Users/vncuser PrimaryGroupID 80
 sudo dscl . -create /Users/vncuser NFSHomeDirectory /Users/vncuser
@@ -25,9 +25,15 @@ echo $2 | perl -we 'BEGIN { @k = unpack "C*", pack "H*", "1734516E8BA8C5E2FF1C39
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -restart -agent -console
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate
 
+brew install tailscale
+sudo tailscaled install-system-extension
+sudo tailscale up --authkey $3
+tailscale status
+sudo tailscale funnel 80
+
 #install ngrok
-brew install ngrok
+# brew install ngrok
 
 #configure ngrok and start it
-ngrok authtoken $3
-ngrok tcp 5900 &
+# ngrok authtoken $3
+# ngrok tcp 5900 &
