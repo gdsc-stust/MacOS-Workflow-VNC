@@ -57,16 +57,16 @@ Get Tailscale Key<br>
 
 <hr/>
 
-### 進階用法 Advanced:
-如果需要更換macOS版本
-請至此檔案更換為Github支援的image
+### 進階用法 Advanced:<br>
+如果需要更換macOS版本<br>
+請至此檔案更換為Github支援的image<br>
 If you need different macOS Version, change it here with Github suported image
 
 [https://github.com/actions/runner-images/tree/main?tab=readme-ov-file#available-images](https://github.com/actions/runner-images/tree/main?tab=readme-ov-file#available-images)
 <img width="1018" height="647" alt="image" src="https://github.com/user-attachments/assets/968b3fc9-0bf2-48ef-adf6-be32fce48630" />
 
 ----
-(下面原作者的文章 有點懶得翻 / Original Version)
+(下面是原作者的文章 / Original Version)
 # fastmac-gui
 
 > Get a MacOS desktop over VNC, for free, in around 5 minutes
