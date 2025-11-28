@@ -70,9 +70,11 @@ For macOS user, use Screen Sharing to connect<br>
 對於Windows使用者，使用VNC Viewer連線<br>
 For Windows user, use VNC Viewer to connect<br>
 
-
-不建議使用檔案保險庫，這可能會拖累效能<br>
+不建議使用檔案保險箱，這可能會拖累效能<br>
 Enabling FileVault is not recommended<br>
+
+如果任何應用程式需要管理員權限，使用vncuser帳號(和先前建立的密碼)登入<br>
+If sudo needed, login as vncuser (and its password)<br>
 
 <img width="1098" height="806" alt="image" src="https://github.com/user-attachments/assets/228f1dbd-ef35-4598-ac90-b2b10a085634" />
 
