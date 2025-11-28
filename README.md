@@ -80,8 +80,9 @@ If sudo needed, login as vncuser (and its password)<br>
 
 <img width="955" height="667" alt="image" src="https://github.com/user-attachments/assets/88d16ea5-7c8a-4680-90b7-16bf11b46979" />
 
-如果有架設服務，Funnel也開好80 Port了，可以直接用
-Funnel on 80 port is also enabled
+
+如果有架設服務，Funnel也開好80 Port了，可以直接用<br>
+Funnel on 80 port is also enabled<br>
 <img width="453" height="107" alt="image" src="https://github.com/user-attachments/assets/57bb830a-3e2e-477c-8299-69ce43e0bcc7" />
 
   
