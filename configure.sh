@@ -102,7 +102,7 @@ sudo dseditgroup -o edit -a "$(whoami)" -t user com.apple.access_screensharing
 
 echo "🚀 Ready to connect!"
 echo "✅ Screen Sharing enabled."
-echo "使用螢幕共享時請選擇「共享顯示器」"
+echo "使用螢幕共享時，帳號vncuser，登入後請選擇「共享顯示器」"
 
 #VNC password - http://hints.macworld.com/article.php?story=20071103011608872
 echo $2 | perl -we 'BEGIN { @k = unpack "C*", pack "H*", "1734516E8BA8C5E2FF1C39567390ADCA"}; $_ = <>; chomp; s/^(.{8}).*/$1/; @p = unpack "C*", $_; foreach (@k) { printf "%02X", $_ ^ (shift @p || 0) }; print "\n"' | sudo tee /Library/Preferences/com.apple.VNCSettings.txt
