@@ -5,6 +5,8 @@ Get a macOS desktop (with Xcode) over VNC, for free, in several clicks
 > 由於系統改版，所以大幅修改腳本使其可以使用，實測macOS 15、macOS 26可以用<br>
 > 基於原作者的說明，增加中文說明與圖解<br>
 
+[影片示範](https://www.youtube.com/watch?v=kCA-j-A6Iic)
+
 
 <img width="1159" height="852" alt="image" src="https://github.com/user-attachments/assets/2bec4e93-6a8e-421b-8419-e4a5c92b655c" />
 
