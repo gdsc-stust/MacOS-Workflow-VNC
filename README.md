@@ -1,6 +1,6 @@
 # MacOS-Workflow-VNC
-戳幾下就得到一個可用的macOS遠端桌面，使用VNC連線<br>
-Get a MacOS desktop over VNC, for free, in several clicks
+戳幾下就得到一個免費可用的macOS遠端桌面(且已安裝Xcode)，使用VNC連線<br>
+Get a macOS desktop (with Xcode) over VNC, for free, in several clicks
 
 > 由於系統改版，所以大幅修改腳本使其可以使用，實測macOS 15、macOS 26可以用<br>
 > 基於原作者的說明，增加中文說明與圖解<br>
