@@ -51,27 +51,39 @@ Get Tailscale Key<br>
 * Start the workflow
 
 <img width="828" height="437" alt="image" src="https://github.com/user-attachments/assets/e2d29502-6a05-477d-952c-4bddb6c000ce" />
+  
+<hr />
+
 
 ### 5
+
 * 取得機器IP (在自己電腦上也要打開Tailscale才能連)
 * Get VM IP (Remember to tailscale up on your own Mac/PC)
+  
 [https://login.tailscale.com/admin/machines](https://login.tailscale.com/admin/machines)
 
 <img width="638" height="90" alt="image" src="https://github.com/user-attachments/assets/1355ab42-3346-46a3-9433-4ef114579da3" />
 
-對於Mac使用者，使用「螢幕共享」(內建的)連線
-For macOS user, use Screen Sharing to connect
 
-對於Windows使用者，使用VNC Viewer連線
-For Windows user, use VNC Viewer to connect
+對於Mac使用者，使用「螢幕共享」(內建的)連線<br>
+For macOS user, use Screen Sharing to connect<br>
 
-不建議使用檔案保險庫，這可能會拖累效能
-Enabling FileVault is not recommended
+
+對於Windows使用者，使用VNC Viewer連線<br>
+For Windows user, use VNC Viewer to connect<br>
+
+
+不建議使用檔案保險庫，這可能會拖累效能<br>
+Enabling FileVault is not recommended<br>
+
 
 <img width="1098" height="806" alt="image" src="https://github.com/user-attachments/assets/228f1dbd-ef35-4598-ac90-b2b10a085634" />
 
 
 <img width="955" height="667" alt="image" src="https://github.com/user-attachments/assets/88d16ea5-7c8a-4680-90b7-16bf11b46979" />
+
+  
+<hr />
 
 
 ### 6
