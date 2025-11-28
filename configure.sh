@@ -15,8 +15,19 @@ sudo dscl . -passwd /Users/vncuser $1
 sudo createhomedir -c -u vncuser > /dev/null
 
 #Enable VNC
-sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -allowAccessFor -allUsers -privs -all
-sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -clientopts -setvnclegacy -vnclegacy yes 
+# sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -allowAccessFor -allUsers -privs -all
+# sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -clientopts -setvnclegacy -vnclegacy yes 
+
+sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart \
+  -activate -configure -access -on \
+  -clientopts -setvnclegacy -vnclegacy yes \
+  -clientopts -setvncpw -vncpw "$VNC_PASSWORD" \
+  -restart -agent -privs -all
+
+# 2. 等待服務重啟一下，確保生效
+sleep 5
+
+echo "✅ Screen Sharing enabled."
 
 #VNC password - http://hints.macworld.com/article.php?story=20071103011608872
 echo $2 | perl -we 'BEGIN { @k = unpack "C*", pack "H*", "1734516E8BA8C5E2FF1C39567390ADCA"}; $_ = <>; chomp; s/^(.{8}).*/$1/; @p = unpack "C*", $_; foreach (@k) { printf "%02X", $_ ^ (shift @p || 0) }; print "\n"' | sudo tee /Library/Preferences/com.apple.VNCSettings.txt
