@@ -26,9 +26,9 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate
 
 brew install tailscale
+brew services start tailscale
 sudo tailscale up --authkey $3
 tailscale status
-sudo tailscale funnel 80
 
 #install ngrok
 # brew install ngrok
