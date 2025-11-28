@@ -2,16 +2,14 @@
 戳幾下就得到一個可用的macOS遠端桌面，使用VNC連線<br>
 Get a MacOS desktop over VNC, for free, in several clicks
 
-> 由於系統改版，所以大幅修改腳本使其可以使用，實測macOS 15可以用<br>
+> 由於系統改版，所以大幅修改腳本使其可以使用，實測macOS 15、macOS 26可以用<br>
 > 基於原作者的說明，增加中文說明與圖解<br>
 
-<img width="1209" height="817" alt="image" src="https://github.com/user-attachments/assets/7fb5ec36-d6bd-4a2b-9f08-e5143d434680" />
-<br><hr />
 
-## 你會需要的東西如下(請看圖):<br>
-Things you'll need to do:<br>
-(refer picture below)<br>
 
+<img width="1159" height="852" alt="image" src="https://github.com/user-attachments/assets/2bec4e93-6a8e-421b-8419-e4a5c92b655c" />
+
+<br>
     
 <hr />
 
@@ -53,6 +51,35 @@ Get Tailscale Key<br>
 * Start the workflow
 
 <img width="828" height="437" alt="image" src="https://github.com/user-attachments/assets/e2d29502-6a05-477d-952c-4bddb6c000ce" />
+
+### 5
+* 取得機器IP (在自己電腦上也要打開Tailscale才能連)
+* Get VM IP (Remember to tailscale up on your own Mac/PC)
+[https://login.tailscale.com/admin/machines](https://login.tailscale.com/admin/machines)
+
+<img width="638" height="90" alt="image" src="https://github.com/user-attachments/assets/1355ab42-3346-46a3-9433-4ef114579da3" />
+
+對於Mac使用者，使用「螢幕共享」(內建的)連線
+For macOS user, use Screen Sharing to connect
+
+對於Windows使用者，使用VNC Viewer連線
+For Windows user, use VNC Viewer to connect
+
+不建議使用檔案保險庫，這可能會拖累效能
+Enabling FileVault is not recommended
+
+<img width="1098" height="806" alt="image" src="https://github.com/user-attachments/assets/228f1dbd-ef35-4598-ac90-b2b10a085634" />
+
+
+<img width="955" height="667" alt="image" src="https://github.com/user-attachments/assets/88d16ea5-7c8a-4680-90b7-16bf11b46979" />
+
+
+### 6
+
+* 用完後可以關掉使用的機器
+* Turn off VM after use
+ <img width="782" height="471" alt="image" src="https://github.com/user-attachments/assets/9dfe4acd-77f9-400f-b829-2232490e43c3" />
+
 
 
 <hr/>
