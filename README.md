@@ -97,12 +97,20 @@ Funnel on 80 port is also enabled<br>
 
 
 
-<hr/>
+<hr/><br>
+
+
+## Xcode Benchmark Assessment 效能評估
+[Xcode 16~26 Compatible Version](https://github.com/devMEremenko/XcodeBenchmark/tree/e3210b662a33b3041ee8ccb079b82a988cec21ba)
+<br>
+
+<img width="1621" height="942" alt="image" src="https://github.com/user-attachments/assets/03186816-922f-4f12-868d-0ec01ad66aa2" />
+
 
 ### 進階用法 Advanced:<br>
-如果需要更換macOS版本<br>
-請至此檔案更換為Github支援的image<br>
-If you need different macOS Version, change it here with Github suported image
+如果需要更換macOS版本，在Actions頁面切換不同yml即可<br>
+或至此檔案更換為Github支援的image<br>
+If you need different macOS Version, choose different yml or change it here in yml with Github suported image
 
 [https://github.com/actions/runner-images/tree/main?tab=readme-ov-file#available-images](https://github.com/actions/runner-images/tree/main?tab=readme-ov-file#available-images)
 <img width="1018" height="647" alt="image" src="https://github.com/user-attachments/assets/968b3fc9-0bf2-48ef-adf6-be32fce48630" />
