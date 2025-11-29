@@ -106,7 +106,7 @@ sudo dseditgroup -o edit -a "$(whoami)" -t user com.apple.access_screensharing
 
 echo "🚀 Ready to connect!"
 echo "✅ Screen Sharing enabled."
-echo "使用螢幕共享時，帳號[vncuser] || Apple Screen Sharing User [vncuser]"
+echo "使用螢幕共享時，帳號 [vncuser] || Apple Screen Sharing User [vncuser]"
 
 #VNC password - http://hints.macworld.com/article.php?story=20071103011608872
 echo $2 | perl -we 'BEGIN { @k = unpack "C*", pack "H*", "1734516E8BA8C5E2FF1C39567390ADCA"}; $_ = <>; chomp; s/^(.{8}).*/$1/; @p = unpack "C*", $_; foreach (@k) { printf "%02X", $_ ^ (shift @p || 0) }; print "\n"' | sudo tee /Library/Preferences/com.apple.VNCSettings.txt
@@ -115,9 +115,10 @@ echo $2 | perl -we 'BEGIN { @k = unpack "C*", pack "H*", "1734516E8BA8C5E2FF1C39
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -restart -agent -console
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate
 echo "--- VM Info ---"
+sw_vers
 sysctl -n machdep.cpu.brand_string hw.memsize
 system_profiler SPHardwareDataType SPSoftwareDataType
-
+echo "---------------"
 brew install tailscale
 sudo brew services start tailscale
 # 5. 讓子彈飛一會兒 (等待 Daemon 建立 Socket)echo "⏳ 等待 Tailscale 服務啟動中..."
@@ -130,13 +131,5 @@ echo "-------------"
 open -a Terminal && sleep 1 && osascript -e 'tell application "Terminal" to quit'
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
 open /System/Library/PreferencePanes/Displays.prefPane
-# 7. 開啟 Funnel (確保本地 80 port 真的有東西在跑喔)
+# 7. 開啟 Funnel
 sudo tailscale funnel 80
-
-
-#install ngrok
-# brew install ngrok
-
-#configure ngrok and start it
-# ngrok authtoken $3
-# ngrok tcp 5900 &
