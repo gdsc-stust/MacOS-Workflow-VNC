@@ -21,6 +21,8 @@ sudo createhomedir -c -u vncuser > /dev/null
 
 defaults write com.apple.universalaccess reduceTransparency -bool false
 killall Dock
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
+killall Finder
 
 echo "🕵️ Check SIP Status..."
 csrutil status
