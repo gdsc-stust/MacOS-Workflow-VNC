@@ -110,7 +110,7 @@ echo $2 | perl -we 'BEGIN { @k = unpack "C*", pack "H*", "1734516E8BA8C5E2FF1C39
 #Start VNC/reset changes
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -restart -agent -console
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate
-
+echo "--- VM Info ---"
 sysctl -n machdep.cpu.brand_string hw.memsize
 system_profiler SPHardwareDataType SPSoftwareDataType
 
@@ -120,7 +120,9 @@ sudo brew services start tailscale
 
 # 6. 登入並配置# --ssh: 順便開啟 Tailscale SSH 功能，以後 SSH 更方便# --accept-routes: 如你有設 Subnet Router 這很有用
 sudo tailscale up --authkey "$TS_KEY"
-
+echo "--- VM IP ---"
+tailscale ip
+echo "-------------------------------"
 # 7. 開啟 Funnel (確保本地 80 port 真的有東西在跑喔)
 sudo tailscale funnel 80
 
