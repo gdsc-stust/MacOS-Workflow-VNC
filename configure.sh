@@ -126,6 +126,7 @@ echo "--- VM IP ---"
 tailscale ip
 echo "-------------"
 open -a Terminal && sleep 1 && osascript -e 'tell application "Terminal" to quit'
+osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
 open /System/Library/PreferencePanes/Displays.prefPane
 # 7. 開啟 Funnel (確保本地 80 port 真的有東西在跑喔)
 sudo tailscale funnel 80
