@@ -58,12 +58,10 @@ Get Tailscale Key<br>
 
 ### 5
 
-* 取得機器IP (在自己電腦上也要打開Tailscale才能連)
-* Get VM IP (Remember to tailscale up on your own Mac/PC)
-  
-[https://login.tailscale.com/admin/machines](https://login.tailscale.com/admin/machines)
+* 機器IP會印在Console (在自己電腦上也要打開Tailscale才能連)
+* VM IP will be printed in console (Remember to tailscale up on your own Mac/PC)
 
-<img width="638" height="90" alt="image" src="https://github.com/user-attachments/assets/1355ab42-3346-46a3-9433-4ef114579da3" />
+<img width="263" height="125" alt="image" src="https://github.com/user-attachments/assets/55f73e90-19ea-4664-a783-11b1f0353610" />
 
 
 對於Mac使用者，使用「螢幕共享」(內建的)連線<br>
