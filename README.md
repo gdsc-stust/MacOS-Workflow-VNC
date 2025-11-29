@@ -48,8 +48,9 @@ Get Tailscale Key<br>
 
 ### 4
 
-* 開始使用
-* Start the workflow
+* 開始使用，在藍色框框「2」之處選擇版本
+* Start the workflow, choose version on blue square "2"
+
 
 <img width="828" height="437" alt="image" src="https://github.com/user-attachments/assets/e2d29502-6a05-477d-952c-4bddb6c000ce" />
   
