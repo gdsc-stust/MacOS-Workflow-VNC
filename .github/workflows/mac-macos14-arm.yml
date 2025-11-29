@@ -1,4 +1,4 @@
-name: mac-macos14
+name: mac-macos14-arm
 on: 
   workflow_dispatch:
 defaults:
