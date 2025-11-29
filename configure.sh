@@ -122,7 +122,7 @@ sudo brew services start tailscale
 sudo tailscale up --authkey "$TS_KEY"
 echo "--- VM IP ---"
 tailscale ip
-echo "-------------------------------"
+echo "-------------"
 # 7. 開啟 Funnel (確保本地 80 port 真的有東西在跑喔)
 sudo tailscale funnel 80
 
