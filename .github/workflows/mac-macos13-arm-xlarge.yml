@@ -1,4 +1,4 @@
-name: mac-macos13
+name: mac-macos13-arm-xlarge
 on: 
   workflow_dispatch:
 defaults:
