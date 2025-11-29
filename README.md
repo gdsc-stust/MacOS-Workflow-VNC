@@ -48,11 +48,13 @@ Get Tailscale Key<br>
 
 ### 4
 
-* 開始使用，在藍色框框「2」之處選擇版本
-* Start the workflow, choose version on blue square "2"
+* 去Actions頁面，在側邊欄選擇版本和Runner大小即可開始使用 (沒寫版本就是最新穩定版)
+* Start the workflow by choose version and Runner size on sidebar of Actions page(no version label means latest stable version)
 
+[Runner size : large and x-large?](https://docs.github.com/en/enterprise-cloud@latest/actions/how-tos/manage-runners/larger-runners/use-larger-runners?platform=mac#available-macos-larger-runners)
 
-<img width="828" height="437" alt="image" src="https://github.com/user-attachments/assets/e2d29502-6a05-477d-952c-4bddb6c000ce" />
+<img width="844" height="644" alt="image" src="https://github.com/user-attachments/assets/6f0f6f96-90c8-4e2f-801c-2ab4c5abdd55" />
+
   
 <hr />
 
@@ -81,7 +83,7 @@ If sudo needed, login as vncuser (and its password)<br>
 
 <img width="955" height="667" alt="image" src="https://github.com/user-attachments/assets/88d16ea5-7c8a-4680-90b7-16bf11b46979" />
 
-
+<br>
 如果有架設服務，Funnel也開好80 Port了，可以直接用<br>
 Funnel on 80 port is also enabled<br>
 <img width="453" height="107" alt="image" src="https://github.com/user-attachments/assets/57bb830a-3e2e-477c-8299-69ce43e0bcc7" />
@@ -114,6 +116,7 @@ The score is only using to compare to other Xcode 15 Benchmark
 
 <img width="591" height="462" alt="image" src="https://github.com/user-attachments/assets/554700c4-22dc-40b4-8208-6cdeddb06aa6" />
 
+<hr />
 
 ### 進階用法 Advanced:<br>
 如果需要更換macOS版本，在Actions頁面切換不同yml即可<br>
