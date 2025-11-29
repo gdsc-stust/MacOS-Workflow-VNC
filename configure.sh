@@ -29,7 +29,9 @@ sudo createhomedir -c -u vncuser > /dev/null
 
 defaults write com.apple.universalaccess reduceTransparency -bool false
 killall Dock
-defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
 killall Finder
 
 echo "🕵️ Check SIP Status..."
