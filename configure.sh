@@ -1,5 +1,13 @@
 #configure.sh VNC_USER_PASSWORD VNC_PASSWORD TS_KEY
 
+
+echo "--- VM Info ---"
+sw_vers
+sysctl -n machdep.cpu.brand_string hw.memsize
+system_profiler SPHardwareDataType SPSoftwareDataType
+echo "---------------"
+
+
 #disable spotlight indexing
 sudo mdutil -i off -a
 
@@ -114,11 +122,8 @@ echo $2 | perl -we 'BEGIN { @k = unpack "C*", pack "H*", "1734516E8BA8C5E2FF1C39
 #Start VNC/reset changes
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -restart -agent -console
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate
-echo "--- VM Info ---"
-sw_vers
-sysctl -n machdep.cpu.brand_string hw.memsize
-system_profiler SPHardwareDataType SPSoftwareDataType
-echo "---------------"
+
+
 brew install tailscale
 sudo brew services start tailscale
 # 5. 讓子彈飛一會兒 (等待 Daemon 建立 Socket)echo "⏳ 等待 Tailscale 服務啟動中..."
