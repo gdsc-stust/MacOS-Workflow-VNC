@@ -1,4 +1,4 @@
-name: mac-macos14-intel
+name: mac-macos14-intel-large
 on: 
   workflow_dispatch:
 defaults:
