@@ -18,7 +18,9 @@ sudo createhomedir -c -u vncuser > /dev/null
 # sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -allowAccessFor -allUsers -privs -all
 # sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -clientopts -setvnclegacy -vnclegacy yes 
 
-#!/bin/bash
+
+defaults write com.apple.universalaccess reduceTransparency -bool false
+killall Dock
 
 echo "🕵️ Check SIP Status..."
 csrutil status
