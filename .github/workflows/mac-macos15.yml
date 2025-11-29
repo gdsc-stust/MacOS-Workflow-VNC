@@ -1,4 +1,4 @@
-name: mac-macos15
+name: mac-macos15-arm
 on: 
   workflow_dispatch:
 defaults:
@@ -7,7 +7,7 @@ defaults:
 
 jobs:
   build:
-    runs-on: macos-15
+    runs-on: macos-15-arm
     steps:
     - uses: actions/checkout@v2
     - name: Setting the environment up.
