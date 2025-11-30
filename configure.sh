@@ -139,4 +139,4 @@ open -a Terminal && sleep 1 && osascript -e 'tell application "Terminal" to quit
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
 open /System/Library/PreferencePanes/Displays.prefPane
 # 7. 開啟 Funnel
-sudo tailscale funnel 80
+sudo tailscale funnel 8080
