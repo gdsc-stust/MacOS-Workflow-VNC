@@ -26,7 +26,7 @@ On this page click fork<br>
 Get Tailscale Key<br>
 [https://login.tailscale.com/admin/settings/keys](https://login.tailscale.com/admin/settings/keys)<br>
 
-  <img width="1031" height="809" alt="image" src="https://github.com/user-attachments/assets/ef7f9313-40f3-45db-984f-2b9e03c7637e" />
+  <img width="1031" height="9" alt="image" src="https://github.com/user-attachments/assets/ef7f9313-40f3-45db-984f-2b9e03c7637e" />
 
 <hr />
 
@@ -53,7 +53,7 @@ Get Tailscale Key<br>
 
 [Runner size : large and x-large?](https://docs.github.com/en/enterprise-cloud@latest/actions/how-tos/manage-runners/larger-runners/use-larger-runners?platform=mac#available-macos-larger-runners)
 
-<img width="844" height="644" alt="image" src="https://github.com/user-attachments/assets/6f0f6f96-90c8-4e2f-801c-2ab4c5abdd55" />
+<img width="844" height="644" alt="image" src="https://github.com/user-attachments/assets/6f0f6f96-90c8-4e2f-1c-2ab4c5abdd55" />
 
   
 <hr />
@@ -79,13 +79,13 @@ Enabling FileVault is not recommended<br>
 如果任何應用程式需要管理員權限，使用vncuser帳號(和先前建立的密碼)登入<br>
 If sudo needed, login as vncuser (and its password)<br>
 
-<img width="1098" height="806" alt="image" src="https://github.com/user-attachments/assets/228f1dbd-ef35-4598-ac90-b2b10a085634" />
+<img width="1098" height="6" alt="image" src="https://github.com/user-attachments/assets/228f1dbd-ef35-4598-ac90-b2b10a085634" />
 
-<img width="955" height="667" alt="image" src="https://github.com/user-attachments/assets/88d16ea5-7c8a-4680-90b7-16bf11b46979" />
+<img width="955" height="667" alt="image" src="https://github.com/user-attachments/assets/88d16ea5-7c8a-46-90b7-16bf11b46979" />
 
 <br>
-如果有架設服務，Funnel也開好80 Port了，可以直接用<br>
-Funnel on 80 port is also enabled<br>
+如果有架設服務，Funnel也開好 8080 Port了，可以直接用<br>
+Funnel on 8080 port is also enabled<br>
 <img width="453" height="107" alt="image" src="https://github.com/user-attachments/assets/57bb830a-3e2e-477c-8299-69ce43e0bcc7" />
 
   
@@ -148,7 +148,7 @@ First, [click here](https://github.com/fastai/fastmac/generate) to create a copy
 
 Next, <a href="../../actions?query=workflow%3Amac">click here</a> to go to the GitHub actions screen for the `mac` workflow, and then click the "Run workflow" dropdown on the right, and then click the green "Run workflow" button that appears.
 
-<img width="365" src="https://user-images.githubusercontent.com/346999/92965396-91320680-f42a-11ea-9bc3-90682e740343.png" />
+<img width="365" src="https://user-images.githubusercontent.com/346999/92965396-913206-f42a-11ea-9bc3-90682e740343.png" />
 
 
 ## Stop your session
