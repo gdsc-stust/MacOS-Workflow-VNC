@@ -119,13 +119,18 @@ Funnel on 8080 port is also enabled<br>
 <hr/><br>
 
 
-## Xcode Benchmark Assessment 效能評估
-[Xcode 16~26 Compatible Version](https://github.com/devMEremenko/XcodeBenchmark/tree/e3210b662a33b3041ee8ccb079b82a988cec21ba)
+## Benchmark Assessment 效能評估
+
+Geekbench 6<br>
+<img width="856" height="276" alt="image" src="https://github.com/user-attachments/assets/ab18a2fa-7d13-461b-831a-67758925b8a9" />
+
+
+[Xcode Benchmark 16~26 Compatible Version](https://github.com/devMEremenko/XcodeBenchmark/tree/e3210b662a33b3041ee8ccb079b82a988cec21ba)
 <br>
 
 <img width="1621" height="942" alt="image" src="https://github.com/user-attachments/assets/03186816-922f-4f12-868d-0ec01ad66aa2" />
 
-[Xcode 15 Compatible Version](https://github.com/devMEremenko/XcodeBenchmark/tree/ba4d2f631b9c159b1d69a57b3ccf9754e54738bb)
+[Xcode Benchmark 15 Compatible Version](https://github.com/devMEremenko/XcodeBenchmark/tree/ba4d2f631b9c159b1d69a57b3ccf9754e54738bb)
 <br>
 The score is only using to compare to other Xcode 15 Benchmark
 <br>
