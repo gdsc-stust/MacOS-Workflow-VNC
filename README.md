@@ -80,10 +80,10 @@ Enabling FileVault is not recommended<br>
 如果任何應用程式需要管理員權限，使用vncuser帳號(和先前建立的密碼)登入<br>
 If sudo needed, login as vncuser (and its password)<br>
 
-<img width="1098" height="6" alt="image" src="https://github.com/user-attachments/assets/228f1dbd-ef35-4598-ac90-b2b10a085634" />
+<img width="2196" height="1612" alt="image" src="https://github.com/user-attachments/assets/44b21683-ab38-42ff-8043-b39abd61a059" />
+<img width="1910" height="1334" alt="image" src="https://github.com/user-attachments/assets/148ecfe6-9cb8-4375-9f1c-9b392cd29736" />
 
-<img width="955" height="667" alt="image" src="https://github.com/user-attachments/assets/88d16ea5-7c8a-46-90b7-16bf11b46979" />
-
+<br>
 <br>
 如果有架設服務，Funnel也開好 8080 Port了，可以直接用<br>
 Funnel on 8080 port is also enabled<br>
