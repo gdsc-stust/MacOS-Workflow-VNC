@@ -26,7 +26,7 @@ On this page click fork<br>
 Get Tailscale Key<br>
 [https://login.tailscale.com/admin/settings/keys](https://login.tailscale.com/admin/settings/keys)<br>
 
-  <img width="1031" height="9" alt="image" src="https://github.com/user-attachments/assets/ef7f9313-40f3-45db-984f-2b9e03c7637e" />
+  <img width="1031" height="809" alt="image" src="https://github.com/user-attachments/assets/ef7f9313-40f3-45db-984f-2b9e03c7637e" />
 
 <hr />
 
@@ -53,7 +53,8 @@ Get Tailscale Key<br>
 
 [Runner size : large and x-large?](https://docs.github.com/en/enterprise-cloud@latest/actions/how-tos/manage-runners/larger-runners/use-larger-runners?platform=mac#available-macos-larger-runners)
 
-<img width="844" height="644" alt="image" src="https://github.com/user-attachments/assets/6f0f6f96-90c8-4e2f-1c-2ab4c5abdd55" />
+<img width="1656" height="874" alt="image" src="https://github.com/user-attachments/assets/c20db27b-590e-42c0-8a67-9dac21ca2fdf" />
+
 
   
 <hr />
