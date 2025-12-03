@@ -7,10 +7,23 @@ sysctl -n machdep.cpu.brand_string hw.memsize
 system_profiler SPHardwareDataType SPSoftwareDataType
 echo "---------------"
 
+echo "Turning Spotling Index OFF"
+nohup bash -c '
+# Disable indexing volumes
+sudo defaults write ~/.Spotlight-V100/VolumeConfiguration.plist Exclusions -array "/Volumes" || true
+sudo defaults write ~/.Spotlight-V100/VolumeConfiguration.plist Exclusions -array "/Network" || true
+sudo killall mds || true
+sleep 60
+sudo mdutil -a -i off / || true
+sudo mdutil -a -i off || true
+sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist || true
+sudo rm -rf /.Spotlight-V100/*
+rm -rf ~/Library/Metadata/CoreSpotlight/ || true
+killall -KILL Spotlight spotlightd mds || true
+sudo rm -rf /System/Volums/Data/.Spotlight-V100 || true
+' >/dev/null 2>&1 &
 
-#disable spotlight indexing
-sudo mdutil -i off -a
-
+echo "Creating User"
 #Create new account
 sudo dscl . -create /Users/vncuser
 sudo dscl . -create /Users/vncuser UserShell /bin/bash
@@ -22,9 +35,7 @@ sudo dscl . -passwd /Users/vncuser $1
 sudo dscl . -passwd /Users/vncuser $1
 sudo createhomedir -c -u vncuser > /dev/null
 
-
-
-defaults write com.apple.universalaccess reduceTransparency -bool false
+defaults write com.apple.universalaccess reduceTransparency -bool true
 killall Dock
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
@@ -33,9 +44,7 @@ killall Finder
 
 echo "🕵️ Check SIP Status..."
 csrutil status
-
 echo "🔓 SIP is disabled! Injecting permissions into TCC.db..."
-
 # 使用 Python 腳本來處理 SQLite，比較不會因為欄位變動而炸裂
 sudo python3 -c "
 import sqlite3
@@ -121,7 +130,6 @@ echo $2 | perl -we 'BEGIN { @k = unpack "C*", pack "H*", "1734516E8BA8C5E2FF1C39
 #Start VNC/reset changes
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -restart -agent -console
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate
-
 
 brew install tailscale
 sudo brew services start tailscale
