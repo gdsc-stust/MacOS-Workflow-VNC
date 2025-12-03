@@ -22,9 +22,6 @@ sudo dscl . -passwd /Users/vncuser $1
 sudo dscl . -passwd /Users/vncuser $1
 sudo createhomedir -c -u vncuser > /dev/null
 
-#Enable VNC
-# sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -allowAccessFor -allUsers -privs -all
-# sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -clientopts -setvnclegacy -vnclegacy yes 
 
 
 defaults write com.apple.universalaccess reduceTransparency -bool false
@@ -86,7 +83,7 @@ try:
         ''', (service, client, now))
         
     con.commit()
-    print('✅ TCC Permissions injected successfully.')
+    print('TCC Permissions injected successfully.')
     con.close()
 
 except Exception as e:
@@ -115,7 +112,7 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 sudo dseditgroup -o edit -a "$(whoami)" -t user com.apple.access_screensharing
 
 echo "🚀 Ready to connect!"
-echo "✅ Screen Sharing enabled."
+echo "🖥️ Screen Sharing enabled."
 echo "使用螢幕共享時，帳號 [vncuser] || Apple Screen Sharing User [vncuser]"
 
 #VNC password - http://hints.macworld.com/article.php?story=20071103011608872
