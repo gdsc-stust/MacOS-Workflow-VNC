@@ -1,6 +1,6 @@
 # MacOS-Workflow-VNC
-戳幾下就得到一個免費可用的macOS遠端桌面(且已安裝Xcode)，使用VNC連線<br>
-Get a macOS desktop (with Xcode) over VNC, for free, in several clicks
+戳幾下就得到一個免費可用的VNC連線的macOS遠端桌面(且已安裝Xcode)、RDP連線的Windows、code-server的Ubuntu<br>
+Get a macOS desktop (with Xcode), Windows RDP, Ubuntu code-server over VNC, for free, in several clicks
 
 > 由於系統改版，所以大幅修改腳本使其可以使用，實測macOS 15、macOS 26可以用<br>
 > 基於原作者的說明，增加中文說明與圖解<br>
@@ -67,7 +67,7 @@ Get Tailscale Key<br>
 
 <img width="263" height="125" alt="image" src="https://github.com/user-attachments/assets/55f73e90-19ea-4664-a783-11b1f0353610" />
 
-
+### macOS執行個體 macOS Instance
 對於Mac使用者，使用「螢幕共享」(內建的)連線<br>
 For macOS user, use Screen Sharing to connect<br>
 
@@ -82,6 +82,21 @@ If sudo needed, login as vncuser (and its password)<br>
 
 <img width="2196" height="1612" alt="image" src="https://github.com/user-attachments/assets/44b21683-ab38-42ff-8043-b39abd61a059" />
 <img width="1910" height="1334" alt="image" src="https://github.com/user-attachments/assets/148ecfe6-9cb8-4375-9f1c-9b392cd29736" />
+
+### Windows執行個體 Windows Instance
+<pre>
+    使用遠端桌面連線連接終端機印出的帳號密碼
+    Use RDP to connect, account and password is printed in console
+</pre>
+
+### Linux執行個體 Linux Instance
+<pre>
+    使用ssh連接終端機印出的帳號，不需密碼
+    Use ssh to connect, account is printed in console, no password needed
+
+    使用終端機印出的code-server網址，可以使用網頁版Code，密碼是先前儲存的VNC_USER_PASSWORD
+    Use url in console to connect code-server, password is your VNC_USER_PASSWORD
+</pre>
 
 <br>
 <br>
